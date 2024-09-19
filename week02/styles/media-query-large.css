@@ -1,0 +1,10 @@
+@media screen and (max-width: 500px) {
+    header {
+        background-color: #aabbee;
+        color: #000
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
