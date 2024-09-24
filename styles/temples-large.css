@@ -1,32 +1,11 @@
 /* Responsive Styles */
 @media only screen and (min-width: 768px) {
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-
   .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
   }
 }
 
-
-
 @media only screen and (min-width: 992px) {
-  header {
-    justify-content: space-around;
-    align-items: center;
-  }
-
   ul.menu {
     display: flex;
     flex-direction: row;
@@ -35,7 +14,7 @@
   }
 
   .hamburger {
-    display: none;
+    display: none; /* Hide hamburger on large screens */
   }
 
   main {
@@ -45,7 +24,6 @@
 
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
   }
 
   figure img {
