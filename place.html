@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya</title>
+    <meta name="description" content="a page about the Kenya a country in East Africa">
+    <meta name="author" content="Nicholas Koyi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,116&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kenya</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/kenya-hero-large.webp">
+                <img src="images/kenya-hero.webp" alt="Savannah grasslands">
+            </picture>
+        </section>
+        <section class="data">
+            <div class="data-heading">
+            <h2>Data</h2>
+        </div>
+            <table>
+                <tr>
+                  <th>Area:</th>
+                  <td>582, 646 sq km</td>
+                </tr>
+                <tr>
+                  <th>Population:</th>
+                  <td>56,432,944</td>
+                </tr>
+                <tr>
+                  <th>Capital:</th>
+                  <td>Nairobi</td>
+                </tr>
+                <tr>
+                  <th>Languages:</th>
+                  <td>English, Swahili</td>
+                </tr>
+                  <tr>
+                  <th>Currency:</th>
+                  <td>Kenyan Shilling</td>
+                </tr>
+                  <tr>
+                  <th>Time Zone:</th>
+                  <td>UTC+3</td>
+                </tr>
+                  <tr>
+                  <th>Calling Code:</th>
+                  <td>+254</td>
+                </tr>
+                  <tr>
+                  <th>Internet TLD:</th>
+                  <td>.ke</td>
+                </tr>
+              </table>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <span class="weather-icon">
+                    <img src="images/sunshine.svg" alt="sun icon">
+                </span>
+                <table>
+                    <tr>
+                      <th>Temperature:</th>
+                      <td> 28 °C</td>
+                    </tr>
+                    <tr>
+                      <th>Conditions:</th>
+                      <td>Sunny</td>
+                    </tr>
+                    <tr>
+                      <th>Wind:</th>
+                      <td>5Km/h</td>
+                    </tr>
+                    <tr>
+                      <th>Wind Chill:</th>
+                      <td id="windchill"></td>
+                    </tr>
+                  </table>
+                </section>
+    
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌺 Nicholas Koyi 🌺 Kenya</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

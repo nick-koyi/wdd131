@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --flag-color-green: #006600;
+  --flag-color-red: #b22222;
+  --flag-color-black: #000000;
+  --flag-color-white: #ffffff;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+header {
+  background-color: var(--flag-color-green);
+  color: var(--flag-color-white);
+  padding: 20px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+}
+
+header::after {
+  content: ''; 
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: var(--flag-color-red);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+main {
+  background-color: var(--flag-color-white);
+}
+
+main h2 {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+main table {
+  border-spacing: 10px;
+  margin: 1rem auto;
+}
+
+
+
+main .table-data {
+  text-align: center;
+}
+
+main table th {
+  text-align: right;
+}
+
+main table td {
+  text-align: justify;
+}
+
+footer {
+  background-color: var(--flag-color-red);
+  color: var(--flag-color-white);
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-bottom: 0.5rem solid var(--flag-color-black);
+}
+
+.weather-icon {
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+}
+
+/* Media Query for Screens with a Minimum Width of 768px */
+@media screen and (min-width: 768px) {
+ 
+    main {
+    position: relative;
+    background-image: url('../images/kenya-hero.webp');
+    background-size: cover;
+  }
+
+  main h2 {
+    display: inline;
+    background: var(--flag-color-green);
+    color: var(--flag-color-white);
+    padding: 10px;
+    position: relative;
+    left: -40px;
+  }
+
+  .weather-icon {
+    display: none;
+}
+
+.weather-icon {
+    display: none; /* Hide the SVG image */
+}
+
+.weather h2::after {
+    content: "☀️"; /* sun emoji */
+    display: inline-block;
+    margin-left: 10px; /* Space between the heading and the emoji */
+    font-size: 20px; /* size of the emoji */
+    vertical-align: middle; /* Align with the heading text */
+}
+
+
+.data-heading h2{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    left: -40px;
+    text-align: left;
+    padding: 10px;
+}
+
+  .data {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    background-color: var(--flag-color-white);
+    z-index: 9999;
+    opacity: .7;
+    padding: 20px;
+  }
+  .weather {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    background-color: var(--flag-color-white);
+    z-index: 9999;
+    opacity: .7;
+    padding: 20px
+  }
+
+  .hero img {
+    border: none;
+  }
+}
